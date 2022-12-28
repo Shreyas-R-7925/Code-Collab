@@ -10,22 +10,35 @@
   background: #282a36; 
   padding:20px; 
   border-radius: 10px; 
-  width:400px; 
-  max-width: 90%;
+  width:380px; 
+  /* height: 200px; */
+  /* max-width: 90%; */
 } 
 
 .CClogo{
-  width: 400px; 
-  height: 150px;
+  width: 190px; 
+  height: 80px;
+  display: inline-block; 
+
 }
+
+.wel{
+  display: inline-block; 
+  font-family:"Poppins";
+  padding-left: 30px; 
+  font-size:x-large;  
+  font-weight: 900;
+  color: aqua;
+} 
 
 footer{
   position: fixed; 
   bottom : 0; 
+  align-items: center;
 } 
 
 footer a{
-  color: #4aee88 ;
+  color: aqua;
 } 
 
 .inputGroup{
@@ -35,7 +48,11 @@ footer a{
 
 .mainLabel{
   margin-bottom : 15px; 
-  margin-top : 15px; 
+  margin-top : 0;  
+  font-size: large; 
+  font-family:"Montserrat"; 
+  font-weight: 900;
+  color: aqua;
 }
 
 .inputBox{
@@ -53,12 +70,38 @@ footer a{
   border: none;
   padding: 10px; 
   border-radius:5px; 
-  font-size:16px; 
+  font-size:15px; 
+  font-weight: 500;
   cursor:pointer; 
   transition: all 0.3s ease-in-out; 
 } 
 
 .loginbtn{
-  background: #4aee88;
+  background: aqua;
+  width:100px; 
+  margin-left:auto ;
+  margin-top: 10px;
+  margin-bottom: 12px;
 }
 
+.loginbtn:hover{
+  background: aquamarine;
+}
+
+.createInfo{
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.createNewBtn{
+  color:aqua; 
+  text-decoration: none;
+  border-bottom: 1px solid aqua; 
+  transition: all 0.3s ease-in-out; 
+} 
+
+.createNewBtn:hover, 
+footer a:hover{
+  color: aliceblue; 
+  border-color:368654; 
+}

@@ -104,4 +104,9 @@ footer a{
 footer a:hover{
   color: aliceblue; 
   border-color:368654; 
+} 
+
+.lsideImg{
+  width: 150px; 
+  height: 90px;
 }

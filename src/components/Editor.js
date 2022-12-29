@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react'; 
-import Codemirror from "codemirror-5.65.11";
-import 'codemirror-5.65.11/lib/codemirror.css'; 
-import 'codemirror-5.65.11/theme/dracula.css';
-import 'codemirror-5.65.11/mode/python/python'; 
-import 'codemirror-5.65.11/addon/edit/closetag';  
-import 'codemirror-5.65.11/addon/edit/closebrackets'; 
+import Codemirror from "codemirror";
+import 'codemirror/theme/dracula.css';
+import 'codemirror/lib/codemirror.css'; 
+import 'codemirror/mode/python/python'; 
+import 'codemirror/addon/edit/closetag';  
+import 'codemirror/addon/edit/closebrackets'; 
 
 const Editor = () => {
         useEffect(() => {

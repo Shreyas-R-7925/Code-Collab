@@ -1,8 +1,17 @@
-import React, {useState} from "react" ;
+import React, {useState, useRef, useEffect} from "react" ;
 import Client from "../components/Client"; 
 import Editor from '../components/Editor'; 
 
-const Colab = () => { 
+const Colab = () => {  
+
+    const socketRef = useRef(null); 
+    useEffect(() => {
+        const init = async () => {
+            socketRef.current = await initSocket(); 
+            socketRef.current.emit('join'); 
+        }; 
+        init(); 
+    }, []);
     const [clients, setClients] = useState([
         {socketId:1, username: 'Rey'},
         {socketId:2, username: 'Ullas'},

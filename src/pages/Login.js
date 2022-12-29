@@ -22,15 +22,14 @@ const Login = () => {
             return;
         }
 
-    // Redirect
-    navigate('/colab/${roomId}',
-    {
-        state: {
-            username,
-        },
-    });
-
-};
+        // Redirect
+        navigate('/colab/${roomId}',
+        {
+            state: {
+                username,
+            },
+        });
+    };
 
     const handleInputEnter = (e) => {
         // console.log('event',e.code);  

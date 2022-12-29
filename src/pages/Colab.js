@@ -1,7 +1,15 @@
 import React, {useState} from "react" ;
-import Client from "../components/Client";
+import Client from "../components/Client"; 
+import Editor from '../components/Editor'; 
+
 const Colab = () => { 
-    const [clients, setClients] = useState([{socketId:1, username: 'Rey'},{socketId:2, username: 'ullas'},]); 
+    const [clients, setClients] = useState([
+        {socketId:1, username: 'Rey'},
+        {socketId:2, username: 'Ullas'},
+        {socketId:3, username: 'John'},
+        {socketId:4, username: 'Mark'},
+        {socketId:5, username: 'Pepe'},
+    ]); 
     return(
         <div className="mainWrap"> 
             <div className="lside"> 
@@ -21,7 +29,7 @@ const Colab = () => {
             <button className="btn leaveBtn">Leave Room</button>
             </div>
             <div className="colabspace">
-                Editor goes here ...
+                <Editor />
             </div>
         </div>
     )

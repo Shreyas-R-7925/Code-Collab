@@ -23,7 +23,7 @@ const Login = () => {
         }
 
         // Redirect
-        navigate('/colab/${roomId}',
+        navigate(`/colab/${roomId}`,
         {
             state: {
                 username,
@@ -65,7 +65,7 @@ const Login = () => {
                 <h4> Built with ❤️ by &nbsp; <a href="https://github.com/Shreyas-R-7925">REY</a></h4>
             </footer>
         </div>
-    )
-}
+    );
+};
 
 export default Login;

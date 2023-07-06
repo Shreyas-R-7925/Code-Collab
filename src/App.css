@@ -1,168 +1,150 @@
-.homePageWrapper{
-  height: 100vh;
-  display : flex; 
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-}
- 
-.formWrapper{
-  background: #282a36; 
-  padding:20px; 
-  border-radius: 10px; 
-  width:400px; 
-  max-width: 90%;
-} 
-
-.CClogo{
-  width: 190px; 
-  height: 80px;
-  display: inline-block; 
-
+.homePageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100vh;
 }
 
-.wel{
-  display: inline-block; 
-  font-family:"Poppins";
-  padding-left: 30px; 
-  font-size:x-large;  
-  font-weight: 900;
-  color: aqua;
-} 
-
-footer{
-  position: fixed; 
-  bottom : 0; 
-  align-items: center;
-} 
-
-footer a{
-  color: aqua;
-} 
-
-.inputGroup{
-  display : flex; 
-  flex-direction : column; 
+.formWrapper {
+    background: #282a36;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
 }
 
-.mainLabel{
-  margin-bottom : 15px; 
-  margin-top : 0;  
-  font-size: large; 
-  font-family:"Montserrat"; 
-  font-weight: 900;
-  color: aqua;
+footer {
+    position: fixed;
+    bottom: 0;
 }
 
-.inputBox{
-  padding: 10px; 
-  border-radius: 5px; 
-  outline: none;
-  border:none; 
-  margin-bottom:14px; 
-  background:#eee;
-  font-size: 16px;
-  font-weight: bold;
-}  
-
-.btn{
-  border: none;
-  padding: 10px; 
-  border-radius:5px; 
-  font-size:16px; 
-  font-weight: bold;
-  cursor:pointer; 
-  transition: all 0.3s ease-in-out; 
-} 
-
-.loginbtn, .leaveBtn{
-  background: aqua;
-  width:100px; 
-  margin-left:auto ;
-  margin-top: 10px;
-  margin-bottom: 12px;
+footer a {
+    color: #d0ee4a;
 }
 
-.loginbtn:hover, .leaveBtn:hover{
-  background: rgb(73, 57, 211);
+.inputGroup {
+    display: flex;
+    flex-direction: column;
 }
 
-.createInfo{
-  margin: 0 auto;
-  margin-top: 20px;
+.mainLabel {
+    margin-bottom: 20px;
+    margin-top: 0;
 }
 
-.createNewBtn{
-  color:aqua; 
-  text-decoration: none;
-  border-bottom: 1px solid aqua; 
-  transition: all 0.3s ease-in-out; 
-} 
-
-.createNewBtn:hover, 
-footer a:hover{
-  color: aliceblue; 
-  border-color:368654; 
-} 
-
-.lsideImg{
-  width: 200px; 
-  height: 90px;
+.homePageLogo {
+    height: 80px;
+    margin-bottom: 30px;
 }
 
-.mainWrap{
-  display:grid; 
-  grid-template-columns: 230px 1fr; 
-  /* height: 100vh; */
+.inputBox {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 14px;
+    background: #eee;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-.lside{
-  background: #1c1e29; 
-  padding: 16px;
-  color:#fff;
-  display: flex;
-  flex-direction:column;
+.btn {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
-.lsideInner{
-  flex: 1; 
-} 
-
-.clientsList{
-  display:flex; 
-  align-items: center; 
-  flex-wrap: wrap;
-  gap:20px;
+.leaveBtn {
+    background: #fe1b1b;
+    width: 100px;
+    margin-left: auto;
 }
 
-.client{
-  display:flex;
-  align-items: center; 
-  flex-direction: column;
-  font-weight: bold;
+.joinBtn {
+    background: #4aed88;
+    width: 100px;
+    margin-left: auto;
 }
 
-.colabspace{
-  background: #fff;
+.joinBtn:hover{
+    background: #368654;
+}
+.leaveBtn:hover {
+    background: #fb3639;
 }
 
-.userName{
-  margin-top:10px; 
+.createInfo {
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
-.logo{
-  border-bottom: 1px solid #424242;
-  padding-bottom:10px;
+.createNewBtn {
+    color: #4aed88;
+    text-decoration: none;
+    border-bottom: 1px solid #4aed88;
+    transition: all 0.3s ease-in-out;
 }
 
-.leaveBtn{
-  margin-top: 20px;  
-  width: 100%;
+.createNewBtn:hover,
+footer a:hover {
+    color: #368654;
+    border-color: #368654;
 }
 
-.CodeMirror{
-  min-height: calc(100vh - 20px); 
-  font-size: 15px; 
-  line-height: 1.6; 
-  padding-top: 20px;
+.mainWrap {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+}
+
+.aside {
+    background: #1c1e29;
+    padding: 16px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.asideInner {
+    flex: 1;
+}
+
+.clientsList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+.userName {
+    margin-top: 10px;
+}
+
+.logo {
+    border-bottom: 1px solid #424242;
+    padding-bottom: 10px;
+}
+
+.logoImage {
+    height: 60px;
+}
+
+.leaveBtn {
+    width: 100%;
+    margin-top: 20px;
+}
+.CodeMirror {
+    min-height: calc(100vh - 20px);
+    font-size: 20px;
+    line-height: 1.6;
+    padding-top: 20px;
 }
